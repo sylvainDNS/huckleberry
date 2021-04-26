@@ -7,6 +7,81 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* Add styles here! */
+
+html {
+  font-size: 1.25rem;
+}
+
+body {
+  --primary: hsl(160deg, 100%, 30%);
+  
+  --secondary-light: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+
+  --black:hsl(0deg, 0%, 0%);
+  --darker:hsl(0deg, 0%, 10%);
+  --dark:hsl(0deg, 0%, 30%);
+  --grey:hsl(0deg, 0%, 40%);
+  --grey-light:hsl(0deg, 0%, 60%);
+  --white:hsl(0deg, 0%, 100%);
+}
+
+header, 
+main {
+  min-height: 50%;
+  padding-top: 96px;
+}
+
+main {
+  background-color: var(--grey-light);
+  border-top: 8px solid var(--grey);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  border: 0px solid transparent;
+
+  background-color: var(--white);
+}
+
+.intro-chunk,
+.card {
+  padding: 8px 24px;
+}
+
+.intro-chunk {
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+strong {
+  color: var(--primary);
+}
+
+main .max-width-wrapper {
+  border-bottom: 8px solid var(--grey);
+}
+
+.indented-heading {
+  width: -moz-fit-content;
+  width: fit-content;
+
+  margin-top: 0;
+  margin-left: -40px;
+  padding: 24px 40px;
+
+  background-color: var(--secondary-light);
+  border-bottom: 8px solid var(--secondary-dark);
+}
